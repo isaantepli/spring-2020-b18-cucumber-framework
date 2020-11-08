@@ -43,24 +43,10 @@ public class Hooks {
 
     }
 
-
-
-
-
-
-
     @After(value = "@db", order = 2 )
     public void tearDownDatabaseConnection(){
         System.out.println("--------> AFTER ANNOTATION: DB CONNECTION CLOSED <------");
     }
-
-
-
-
-
-
-
-
 
     @BeforeStep
     public void setUpStep(){
